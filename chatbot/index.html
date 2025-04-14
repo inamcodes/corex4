@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="chat-window">
+
+        <div class="close-bar">
+            <div class="title">
+                Core AI
+            </div>
+            <button class="close">
+                <img src="close_button.png " alt="close" class="close-image">
+            </button>
+        </div>
+        <div class="chat">
+            <div class="model">
+                <p>What do you want to learn today?</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <input placeholder="Ask me anything..." type="text">
+            <button>
+                <img src="send-icon.png" alt="send">
+            </button>
+        </div>
+        
+    </section>
+
+    <div class="chat-button">
+        <img src="chat-icon.png" alt="start chat">
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    
+    <script type="module" src="script_chatbot.js"></script>
+    
+</body>
+</html>
